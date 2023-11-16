@@ -33,7 +33,7 @@
 
 #c2 {
     background-color: blue;
-    position: absolute;
+    position: absolute; /* Este position absolute hace que el elmento c3 pierda la referencia hacia c2 y se referencie con c1*/
     top: 0%;
     left: 10%;
     z-index:-1;
