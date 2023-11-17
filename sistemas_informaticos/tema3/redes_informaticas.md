@@ -49,3 +49,23 @@ El algoritmo de `Prim` permite encontrar un árbol recubridor mínimo de un graf
 3. No se pueden crear ciclos.
 
 
+## Clasificación de las redes
+
+- Redes punto a punto
+- Redes entre iguales
+- Redes basadas en servidores centrales
+
+### Cliente-servidor
+
+- Servidores de correo
+- Servidores de impresion
+- World Wide Web
+
+`Cliente:` Demandante de servicios
+
+`Servidores:` Proveedores de servicios. Puede ser tambien un ordenador que comparte sus perifericos con otros ordenadores.
+
+`Definicion 1:` Programas de computadoras en ejecución que atienden las peticiones de otros programas. 
+
+`Definicion2:` Tipo de software que realiza ciertas tareas en nombre de los usuarios. 
+
