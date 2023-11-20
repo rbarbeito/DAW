@@ -3,11 +3,16 @@
 # Escribe tu código aquí.
 #
 
-list_unicos=[]
-for i in range(len(my_list)):
-    if my_list[i] not in list_unicos:
-        list_unicos.append(my_list[i])
+# list_unicos=[]
+# for i in range(len(my_list)):
+#     if my_list[i] not in list_unicos:
+#         list_unicos.append(my_list[i])
         
-my_list=list_unicos        
-print("La lista con elementos únicos:")
+# my_list=list_unicos        
+
+print(my_list)
+for i in range(len(my_list)-1,-1,-1):
+    if my_list[i] in my_list[:i]:
+        del my_list[i]
+
 print(my_list)
