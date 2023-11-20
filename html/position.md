@@ -1,10 +1,10 @@
 `absolute:` Hace que el resto de los elementos pierdan la referencia hacia el, puede posicionarse en cualquier parte de la pagina web.
 
-`relative:` Hace que os elementos que contiene tengan referencia solo hacia el, solo se utiliza en contenedores
+`relative:` Hace que los elementos que contiene tengan referencia solo hacia el, solo se utiliza en contenedores
 
 `fixed:` Fija un elemento en una posición especifica y ese elemento no se mueve aunque hagas scroll, se aplica al menu o al footer, se fijan arriba o abajo con `Top` y con `Left`
 
-`z-index:` position en el eje Z no funciona si no tienes implementada la propiedad position
+`z-index:` position en el eje Z `no` funciona si no tienes implementada la propiedad position
 
 ```css
 * {
