@@ -13,3 +13,5 @@ PIEZA (codigo INT, nombre VARCHAR, color VARCHAR, precio FLOAT, categoria INT) c
 PROVEEDOR_PIEZA(codigopp INT, codigo_proveedor INT, codigo_pieza INT, fecha DATETIME, cantidad INT)
 
 ```
+
+![Alt text](image-7.png)
