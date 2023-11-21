@@ -1,4 +1,4 @@
-# Resolucion de ejercicios de modelo E/R a modelo Lógico
+# Resolución de ejercicios de modelo E/R a Modelo Lógico
 
 
 ![Alt text](image-6.png)
