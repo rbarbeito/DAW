@@ -12,6 +12,8 @@ CREATE TABLE pieza (
     nombre VARCHAR(120) NOT NULL,
     color VARCHAR(25) NOT NULL,
     precio DECIMAL(7 , 2 ),
+    -- precio FLOAT(7 , 2 ),
+    -- precio DOUBLE(7 , 2 ),
     codigo_categoria INT UNSIGNED NOT NULL,
     FOREIGN KEY (codigo_categoria)
         REFERENCES categoria (codigo)

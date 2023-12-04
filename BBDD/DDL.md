@@ -93,9 +93,8 @@ ALTER ---Alterar la configuracion de las tablas
 ---Resolucion del ejercicio 1
 
 DROP DATABASE IF EXISTS tienda_pieza;
-CREATE DATABASE tienda_pieza charset utf8mb4;
+CREATE DATABASE tienda_pieza CHARSET utf8mb4 COLLATE utf8mb4_general_ci;
 USE tienda_pieza;
-
 
 CREATE TABLE categoria (
     codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -108,7 +107,7 @@ CREATE TABLE pieza (
     color VARCHAR(25) NOT NULL,
     precio DECIMAL(7 , 2 ),
     codigo_categoria INT UNSIGNED NOT NULL,
-    FOREIGN KEY (codigo)
+    FOREIGN KEY (codigo_categoria)
         REFERENCES categoria (codigo)
 );
 
@@ -120,9 +119,9 @@ CREATE TABLE proveedor (
     provincia VARCHAR(50) not null
 );
 
-CREATE TABLE proovedor_suministra_pieza (
+CREATE TABLE proveedor_suministra_pieza (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    codigo_proovedor INT UNSIGNED,
+    codigo_proveedor INT UNSIGNED,
     codigo_pieza INT UNSIGNED,
     fecha DATE NOT NULL,
     cantidad INT UNSIGNED NOT NULL,
