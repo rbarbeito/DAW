@@ -26,5 +26,5 @@ for i in range(len(list)-1):
     total+=list[i]    
 
 print("El numero mayor de la lista es", list[len(list)-1])
-print("El numero mayor de la lista es", list[0])
+print("El numero menor de la lista es", list[0])
 print("El promedio es", round(total/len(list),2))

@@ -73,3 +73,60 @@ USE pepito;
 
 ![Usando base de datos](image-5.png)
 
+
+```SQL
+SHOW databases; ---mostrar bases de datos en el mysql
+
+USE pepito; ---Usar database pepito
+
+SHOW tables;  --- mostrar tablas de una base de datos
+
+TRUNCATE nombre_table; --- Borrar los datos de una tabla
+
+ALTER ---Alterar la configuracion de las tablas
+```
+
+
+> script para crear una base de datos y sus tablas
+
+```SQL
+---Resolucion del ejercicio 1
+
+DROP DATABASE IF EXISTS tienda_pieza;
+CREATE DATABASE tienda_pieza charset utf8mb4;
+USE tienda_pieza;
+
+
+CREATE TABLE categoria (
+    codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE pieza (
+    codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(120) NOT NULL,
+    color VARCHAR(25) NOT NULL,
+    precio DECIMAL(7 , 2 ),
+    codigo_categoria INT UNSIGNED NOT NULL,
+    FOREIGN KEY (codigo)
+        REFERENCES categoria (codigo)
+);
+
+CREATE TABLE proveedor (
+    codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    direccion VARCHAR(150) not null,
+    ciudad VARCHAR(50) not null,
+    provincia VARCHAR(50) not null
+);
+
+CREATE TABLE proovedor_suministra_pieza (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    codigo_proovedor INT UNSIGNED,
+    codigo_pieza INT UNSIGNED,
+    fecha DATE NOT NULL,
+    cantidad INT UNSIGNED NOT NULL,
+    FOREIGN KEY (codigo_proveedor) REFERENCES proveedor(codigo),
+    FOREIGN KEY (codigo_pieza) REFERENCES pieza(codigo)
+);
+```
