@@ -11,7 +11,7 @@ CREATE TABLE pieza (
     codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(120) NOT NULL,
     color VARCHAR(25) NOT NULL,
-    precio DECIMAL(7 , 2 ),
+    precio DECIMAL(7 , 2 ) DEFAULT (0.00),
     -- precio FLOAT(7 , 2 ),
     -- precio DOUBLE(7 , 2 ),
     codigo_categoria INT UNSIGNED NOT NULL,
