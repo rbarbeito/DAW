@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kalnia', serif;
+}
+
+:root {
+    --color-100: #191C24;
+    --color-50: #828DA9;
+    --color-0: #F3F4F7;
+}
+
+.container {
+    background-color: var(--color-100);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+.header>img {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    color: var(--color-50);
+}
+
+main>.disc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disc>img,
+.extras {
+    width: 90%;
+}
+
+.extras {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extras>.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+}
+
+.timeline {
+    margin: 20px 0 15px;
+    width: 90%;
+    height: 0px;
+    border-radius: 25%;
+    border: solid var(--color-0) 3px;
+}
+
+.data>i {
+    font-size: 9px;
+    margin: 0px 5px;
+}
+
+
+.extras>.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.controls>i {
+    font-size: 25px;
+    padding: 5px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer>i {
+    font-size: 20px;
+    color: var(--color-0);
+}
+
+footer>i:hover {
+    color: yellow;
+}
+
+@media only screen and (min-width:640px) {}
+
+@media only screen and (min-width:1080px) {
+    .header {
+        justify-content: left;
+        height: 100px;
+    }
+
+    .header>img {
+        width: 200px;
+        height: auto;
+    }
+
+    main{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main>.disc {
+        flex-direction: row;
+        padding: 10px 10px;
+        justify-content:space-evenly ;
+        width: 90%;
+    }
+
+    .disc>img {
+        width: 450px;
+    }
+
+    .extras{
+        margin: 0 20px;
+        align-items: flex-start;
+    }
+    .extras>.cancion {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    footer>i {
+        font-size: 30px;
+        color: var(--color-0);
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+    .cancion span{
+        font-size: 25px;
+    }
+
+    .cancion .data{
+        margin: 8px 0;
+    }
+
+    .cancion i{
+        font-size: 18px;
+    }
+    
+}

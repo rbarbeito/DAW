@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#principal {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo {
+    width: 70%;
+    text-align: center;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+button {
+    border: none;
+    border-radius: 15px 0px 15px 0px;
+    box-shadow: 5px 5px 10px black;
+    padding: 8px 16px;
+    margin: 15px;
+    background-color: brown;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: bisque;
+}
+
+#rrss{
+    width: 60%;
+    padding: 16px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#rrss i {
+    margin: 0px 10px;
+    font-size: 35px;
+}
+
+#i1{
+    color:#4267B2
+}
+
+#i3{
+    color:#fd4e27
+}

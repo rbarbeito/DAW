@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3a02f40508.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <i class="fa-solid fa-user"></i>
+            <label for="nombre">Nombre y apellidos*</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <pre></pre>
+            <label for="fecha">Fecha de nacimiento*</label>
+            <input type="date" name="fecha" id="fecha" required>
+        </fieldset>
+        <pre></pre>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="email">Dirección de correo*</label>
+            <input type="email" name="email" required>
+            <pre></pre>
+            <label for="phone">Teléfono*</label>
+            <input type="tel" name="phone" id="phone" placeholder="(99)99-999-9999">
+        </fieldset>
+
+        <pre></pre>
+        <fieldset>
+            <legend>Otros datos</legend>
+            <label for="salario">Rango de preferencia</label>
+            <input type="number" name="salario" id="salario" min="-10" max="10" required>
+            <pre></pre>
+            <i class="fa-solid fa-paint-roller"></i>
+            <label for="color">Color favorito*</label>
+            <input type="color" name="color" id="color" value="#ff0000" required>
+        </fieldset>
+
+        <pre></pre>
+        <fieldset>
+            <legend>Elementos extras</legend>
+
+            <label for="url">Sitio web</label>
+            <input type="url" name="url" id="url" placeholder="http://www.facebok.com">
+
+            <pre></pre>
+            <label for="time">Alarma preferida</label>
+            <input type="time" name="tiempo" id="tiempo">
+
+            <pre></pre>
+            <label for="mes">Mes y año del suceso</label>
+            <input type="month" name="mes" id="mes">
+
+            <pre></pre>
+            <label for="datetime">Fecha y hora de partida</label>
+            <input type="datetime-local" name="datetime" id="datetime">
+
+            <pre></pre>
+            <i class="fa-solid fa-calendar-week"></i>
+            <label for="semana">Semana de celebraciones</label>
+            <input type="week" name="semana" id="semana">
+
+            <pre></pre>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <label for="bucar">Buscar usuario</label>
+            <input type="search" name="buscar" id="buscar" placeholder="Buscar usuario">
+
+            <pre></pre>
+            <details>
+                <summary>Terminos y condiciones</summary>
+                <p>Toda la informacion que sea intorducida en este formulario sera usada para envirte <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem aperiam ipsum minima? Velit quisquam, veritatis optio doloremque ad iusto dolorem expedita, <em>ipsa sequi maxime pariatur</, ratione corrupti reiciendis eius eum.</em>  en función de tus gustos.</p>
+            </details>
+        </fieldset>
+
+        <pre></pre>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>

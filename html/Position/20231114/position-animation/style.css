@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#principal {
+    border: 1px solid;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.caja {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 10pt;
+}
+
+#c1 {
+    background-color: red;
+}
+
+#c2 {
+    background-color: blue;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    z-index:-1;
+
+}
+
+#c3 {
+    background-color: green;
+}

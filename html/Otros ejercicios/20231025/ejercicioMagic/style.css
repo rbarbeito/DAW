@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+#carta {
+    background-color: #bd930a;
+    border: 3px solid black;
+    width: 80%;
+    border-radius: 15px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#carta header span {
+    color: white;
+    padding: 2px 0;
+    font-weight: 500;
+}
+
+.img-container {
+    width: 100%;
+}
+
+#carta header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#iconos {
+    display: flex;
+    justify-content: flex-end;
+    width: 65px;
+    height: 15px;
+    padding: 2px 0;
+}
+
+#iconos i {
+    padding: 0px 2px;
+}
+
+#gris {
+    color: gray
+}
+
+#azul {
+    color: blue
+}
+
+#verde {
+    color: green
+}
+
+#rojo {
+    color: red
+}
+
+#orange {
+    color: orangered;
+}
+
+#article1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#article1 h4 {
+    color: white;
+    font-weight: 100;
+    font-size: 13px;
+    padding: 0 6px;
+}
+
+#escudo {
+    display: flex;
+    align-items: center;
+}
+
+#article2 {
+    border: 5px inset #9c9197;
+    height: 100%;
+    background-color: #d6ccca;
+}
+
+#article2 p {
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 1.3;
+    padding: 6px;
+}
+
+#article3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+#article3 #s1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blanchedalmond;
+}
+
+#s1 h4,
+h6 {
+    font-weight: 100;
+}
+
+#s1 h6 {
+    font-size: xx-small;
+}
+
+#article3 #s2 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blanchedalmond;
+    text-shadow: 2px 2px 2px black;
+}

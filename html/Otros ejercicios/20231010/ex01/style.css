@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#principal p {
+    border: 1px solid;
+    margin: 16px;
+}
+
+#principal h1{
+    border: 1px solid;
+    padding: 16px;
+}

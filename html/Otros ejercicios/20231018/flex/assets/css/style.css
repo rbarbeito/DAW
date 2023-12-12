@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    border: 4px solid magenta;
+    padding: 16px;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja{
+    border: 1px solid;
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px black;
+    margin: 8px;
+}
+
+#c1{
+    background: red;
+}
+#c2{
+    background: green;
+}
+#c3{
+    background: blue;
+}

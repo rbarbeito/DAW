@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 690px) {
+    body {
+        overflow: hidden;
+    }
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+#content {
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.postal {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    justify-content: end;
+    align-items: center;
+    height: 350px;
+    background-image: url("https://s1.eestatic.com/2022/08/29/viajes/699190190_226716975_1706x960.jpg");
+
+}
+
+.postal #divcabeza {
+    margin-top: 20px;
+}
+
+.postal #divp {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.btn {
+    background-color: #504991;
+    border: 1px solid #564bbd;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 20px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 15px 3px;
+    background-color: #444444;
+    color: rgb(209, 209, 209);
+}
+
+#menu {
+    padding: 5px 15px;
+}
+
+#menu li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font: bold 13px verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.contentfooter {
+    width: 30%;
+    height: 100%;
+    margin: 0px 10px;
+    align-items: end;
+}
+
+#footer #redes {
+    display: flex;
+    justify-content: end;
+}
+
+#footer #contacto {
+    display: flex;
+    justify-content: center;
+}
+
+#redes img {
+    margin: 5px;
+}
