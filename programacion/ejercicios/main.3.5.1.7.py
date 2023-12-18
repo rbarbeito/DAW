@@ -1,4 +1,7 @@
 import random
+import time
+
+inicio=time.time()
 
 lista_tuplas=[[-5.00,10.00],[8.00,30.00],[25.00,35.00],[20.00,30.00]]
 temps=[]
@@ -41,3 +44,7 @@ print("Menor es",menor)
 print("Mayor es", mayor)
 print("Temperatura promedio al mediodía:", round(total / 31,2))
 print("Cantidad de dias con temperatura mayor a 20 grados:", dias_temp_veinte_grados)
+
+
+fin=time.time()
+print(fin-inicio)
