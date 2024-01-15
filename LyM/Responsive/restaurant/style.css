@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(193, 50, 2);
+    background: linear-gradient(180deg, rgba(193, 50, 2, 0.8379726890756303) 0%, rgba(255, 175, 0, 1) 100%);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 40%;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    width: 50%;
+}
+
+.empresa>h1 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.slogan {
+    width: 90vw;
+    margin-block-start: 15px;
+}
+
+.slogan>p {
+    text-align: center;
+    color: darkslategray;
+}
+
+main {
+    height: 100%;
+    border-radius: 25px 25px 0 0;
+    padding: 40px 25px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px black;
+    margin-top: 10px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 90%;
+}
+
+div > input {
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ffaf00;
+    padding-inline-start: 10px;
+}
+
+div> textarea {
+    height: 110px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #ffaf00;
+    padding: 10px;
+
+}
+
+.button {
+    margin-block-start: 20px;
+    padding: 8px 35px;
+    border-radius: 15px;
+    background: #c13202;
+    color: white;
+    border: 1px solid #ffaf00;
+    text-align: center;
+    cursor: pointer;
+}
+
+input:focus{
+    box-shadow: 0px 0px 5px #ffaf00;
+}
+
+::placeholder {
+    color: black;
+}
+
+@media screen and (min-width:1020px) {
+    .principal {
+        flex-direction: row;
+    }
+
+    header {
+        justify-content: start;
+    }
+
+    header>.empresa{
+        margin-top: 200px;
+    }
+
+    .empresa > h1 {
+        font-size: 65px;
+    }
+
+    .slogan {
+        /* visibility: hidden; */
+        position: absolute;
+        left: 800px;
+        bottom: 150px;
+        width: 300px;
+    }
+
+    header {
+        width: 40%;
+        height: 100vh;
+        padding: 0;
+    }
+
+    .logo img {
+        width: 46%;
+        position: absolute;
+        left: 55px;
+        bottom: 30px
+    }
+
+
+    main {
+        height: 100vh;
+        border-radius: 100% 0% 41% 59% / 0% 68% 32% 100%;
+        /* padding: 10px 15px; */
+        background-color: whitesmoke;
+        box-shadow: 0 0 150px black;
+        margin-top: 0px;
+        width: 80%;
+        display:flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: end;
+        padding: 0px 0px;
+    }
+
+    .formulario {
+        width: 90%;
+        height: 80%;
+        justify-content: top;
+        align-items: end;
+
+    }
+
+    form {
+        align-items: center;
+        height: 90%;
+        width: 75%;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        width: 100%
+    }
+
+}

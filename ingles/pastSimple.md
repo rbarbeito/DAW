@@ -65,3 +65,10 @@ She didn't write an essay
 Question: `Where did you go yesterday?` 
 Response:  `I went to de cinema`
 
+
+#### OJO
+`present` I play football
+`Past simple` I played football
+`Negative present` I don't play football => :alien: El `do` nos dice que es presente
+`Negative past simple` I didn't play football => :alien: El `did` nos expresa el pasado
+

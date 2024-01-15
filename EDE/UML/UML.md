@@ -66,3 +66,4 @@ En la composición débil, los componentes pueden ser compartidos por varios obj
 Permite que los metodos heredados por los hijos mediante la herencia, pueden ser modificados localente en las subclases.
 
 ![Alt text](image-7.png)
+

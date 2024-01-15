@@ -22,8 +22,12 @@
 
 `fewer bugs`
 
-`dissadvantage` is synonymous of `drawbacks` : desventajas, inconvenientes
+`disadvantage` is synonymous of `drawbacks` : desventajas, inconvenientes
 
 
-> Las palabras largas terminadas en `ary`, `ery`,`ory`,`ury`  no se pronuncian las vocales, example: `cementary` `secretary` `proprietry` `every` `vocabulary`
+> Las palabras largas terminadas en `ary`, `ery`,`ory`,`ury`  no se pronuncian las vocales, example: `cemetery` `secretary` `propriety` `every` `vocabulary`
+
+`URl` Uniform Resource Locator
+
+`bookmarks` favorites
 

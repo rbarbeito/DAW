@@ -3,12 +3,12 @@ titulo = 0
 lista_num = []
 
 opciones_menu = ["CALCULADORA", "MENÚ",
-                 "1. Sumar", 
+                 "1. Sumar",
                  "2. Restar",
                  "3. Dividir",
                  "4. Multiplicar",
                  "5. Resto",
-                 "6. Raiz Cuadrada",
+                 "6. Raíz Cuadrada",
                  "0. Salir"]
 
 
@@ -35,19 +35,33 @@ while x_menu != 0:
 
     x_menu = int(input("Seleccione la operación: "))
 
-    print(x_menu)
-    
-    operacion=True
-    resultado=0
+    operation = True
+    resultado = 0
+
     if x_menu == 1:
-        
-        while operacion:
-            operacion=False
-            num=input("Número a sumar, ('enter' para resultado): ")
-            
-            if num != ' ':
-                resultado+=int(num)
-                operacion=True
-                
-        print("La suma de tus numeros es:", resultado1)        
-            
+
+        while operation:
+            operation = False
+            num = input("Número a sumar, ('R' para resultado): ")
+
+            print(type(num))
+
+            if num != "r" and num != "R":
+                resultado += int(num)
+                operation = True
+
+        print("La suma de tus números es:", resultado)
+
+    if x_menu == 2:
+
+        while operation:
+            operation = False
+            num = input("Número a sumar, ('R' para resultado): ")
+
+            print(type(num))
+
+            if num != "r" and num != "R":
+                resultado += int(num)
+                operation = True
+
+        print("La suma de tus números es:", resultado)

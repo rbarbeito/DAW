@@ -1,0 +1,174 @@
+@media screen and (min-width:1000px) {
+    .principal {
+        /* width: 100vw; */
+    }
+
+    header {
+        /* padding: 20px; */
+        width: 92%;
+        padding: 40px 50px 0;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+
+    h2,
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    article {
+        flex-direction: row;
+        gap: 5px;
+        padding: 15px;
+    }
+
+    article:first-of-type {
+        margin-block-end: 50px;
+        width: 97vw;
+
+        input{
+            height: 45px;
+        }
+
+    }
+
+    article:nth-of-type(2) {
+        background-color: var(--neutral-light-grayish-blue);
+        border-radius: 60% 60% 0 0 / 10% 10% 0 0;
+        padding-top: 100px;
+        width: 100%;
+        height: 636px;
+
+        .testimonial {
+            background-color: white;
+        }
+
+        .form-information>input {
+            background-color: var(--neutral-light-grayish-blue);
+        }
+    }
+
+    main>article:last-of-type {
+        margin-top: 0px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        div {
+            width: 40%;
+
+            p:first-of-type {
+                font-size: 25px;
+            }
+
+            p:last-of-type {
+                text-align: start;
+                font-size: 11px;
+                margin-top: 12px;
+            }
+        }
+
+        .form-information{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            input{
+                width: 100%;
+                height: 45px;
+            };
+
+            button{
+                width: 60%;
+            }
+        }
+
+    }
+
+
+    .seccion-informativa {
+        align-items: start;
+        width: 50%;
+
+        h2,
+        h3,
+        p {
+            text-align: start;
+        }
+
+        .form-information {
+            flex-direction: row;
+            width: 100%;
+
+            input {
+                width: 65%;
+            }
+
+            button {
+                width: 35%;
+            }
+        }
+    }
+
+    .seccion-imagen {
+        width: 50%;
+
+    }
+
+    .seccion-imagen>div {
+        width: 95%;
+        height: auto;
+    }
+
+
+    footer {
+        width: 100%;
+    }
+
+
+    footer>div:nth-of-type(2) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+
+        div>section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        section>span>img {
+            margin-inline-end: 15px;
+        }
+    }
+
+    footer>div:nth-of-type(2)>div:first-child {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        gap: 45px;
+
+    }
+
+    .red {
+        width: 40px;
+        height: 40px;
+
+        i {
+            font-size: 20px;
+
+        }
+    }
+}

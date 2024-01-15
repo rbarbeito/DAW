@@ -15,10 +15,8 @@ lista_meses = ["enero", "febrero", "marzo", "abril", "mayo",
 
 mes = int(input("Diga el número del mes desea obtener la información: "))
 
-if mes > 12:
-    print("El año solo tiene 12 meses")
-elif mes < 1:
-    print("Debe ser un numero mayor que cero")
+if mes > 12 and mes < 1:
+    print("** Error ** => Solo es valido meses del 1 al 12")
 else:
     print("El nombre del mes seleccionado es",
           lista_meses[mes-1], "tiene", lista_dias_meses[mes-1], "días")
