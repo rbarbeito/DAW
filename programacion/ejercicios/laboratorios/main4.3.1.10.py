@@ -1,12 +1,11 @@
 ﻿def liters_100km_to_miles_gallon(liters):
-#
-# Escribe tu código aquí.
-#
+    
+    return ((1000/1609.344)/(liters/3.785411784))*100
+
 
 def miles_gallon_to_liters_100km(miles):
-#
-# Escribe tu código aquí.
-#
+    return (100*1000/((miles * 1609.344)/3.785411784))
+
 
 print(liters_100km_to_miles_gallon(3.9))
 print(liters_100km_to_miles_gallon(7.5))

@@ -151,6 +151,121 @@ La función sorted() hará su mejor esfuerzo y la salida será la siguiente:
 gato -> chat
 perro -> chien
 
+## ¿Cómo utilizar un diccionario? Los métodos item() y values()
+
+### Método items(). 
+
+Este método **regresa una lista de tuplas** (este es el primer ejemplo en el que las tuplas son mas que un ejemplo de si mismas) **donde cada tupla es un par de cada clave con su valor**.
+
+```Python
+#Ejemplo
+
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+for spanish, french in dictionary.items():
+    print(spanish, "->", french)
+```
+
+Salida
+>gato -> chat
+perro -> chien
+caballo -> cheval
+
+### Método values()
+
+Funciona de manera muy similar al de keys(), pero **regresa una lista de valores**.
+
+```Python
+#Ejemplo
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+for french in dictionary.values():
+    print(french)
+```
 
 
+Salida
+>chat
+chien
+cheval
 
+### enumerate()
+
+```Python
+#Ejemplo
+
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+for i,j in dictionary.items():
+    print(i,j)
+```
+
+salida
+>0 chat
+1 chien
+2 cheval
+
+## ¿Cómo utilizar un diccionario? Modificar, agregar y eliminar valores
+
+El asignar un nuevo valor a una clave existente es sencillo, debido a que los diccionarios son completamente mutables, no existen obstáculos para modificarlos.
+
+Se va a reemplazar el valor "chat" por "minou", lo cual no es muy adecuado, pero funcionará con nuestro ejemplo.
+
+```Python
+dictionary = {'gato': 'minou', 'perro': 'chien', 'caballo': 'cheval'}
+
+dictionary['gato'] = 'minou'
+print(dictionary)
+```
+
+Salida
+> {'gato': 'minou', 'dog': 'chien', 'caballo': 'cheval'}
+
+### Agregando nuevas claves
+
+El agregar una nueva clave con su valor a un diccionario es tan simple como cambiar un valor. Solo se tiene que asignar un valor a una nueva **clave que no haya existido antes**.
+
+```Python
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+dictionary['cisne'] = 'cygne'
+print(dictionary)
+```
+
+Salida
+
+> {'gato': 'chat', 'perro': 'chien', 'caballo': 'cheval', 'cisne': 'cygne'}
+
+También es posible insertar un elemento al diccionario utilizando el método `update()`, por ejemplo:
+
+```Python
+dictionary.update({"pato": "canard"})
+print(dictionary)
+```
+
+### Eliminado una clave
+
+Nota: al eliminar la clave también se **removerá el valor asociado. Los valores no pueden existir sin sus claves**.
+
+```Python
+#Ejemplo
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+del dictionary['perro']
+print(dictionary)
+```
+
+> :sound: **Nota:** el eliminar una clave no existente, provocará un error.
+
+Para eliminar el ultimo elemento de la lista, se puede emplear el método `popitem()`:
+
+```Python
+#Ejemplo
+dictionary = {"gato" : "chat", "perro" : "chien", "caballo" : "cheval"}
+
+dictionary.popitem()
+print(dictionary)    # salida: {'gato': 'chat', 'perro': 'chien'}
+
+```
+
+>:sound: **Nota** En versiones anteriores de Python, por ejemplo, antes de la 3.6.7, el método popitem() elimina un elemento al azar del diccionario.
