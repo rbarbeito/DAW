@@ -1,0 +1,31 @@
+*{
+padding: 0;
+margin: 0;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caja{
+    width: 40%;
+    height: 500px;
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 10px black;
+    overflow: hidden;
+    /* overflow: scroll; Genera un scroll en el contenedor para mostrar la imagen */
+
+    & img{
+        transform: translate(-100px , 0);
+        transition: .2s ease-in-out;
+    }
+
+    & img:hover{
+        transform: scale(1.1)
+    }
+}
+
