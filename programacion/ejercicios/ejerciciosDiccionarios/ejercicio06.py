@@ -65,29 +65,49 @@ while x_menu != 0:
                 
     
     elif x_menu == "2":
-        nif= input("Teclee el " + datos_clientes[0] + " del cliente a borrar:")
+        nif= input("Teclee el " + datos_clientes[0] + " del cliente a borrar: ")
         
         if nif not in bd_clientes.keys():
             print("Cliente no registrado en la base de datos")
-        else:
-            del bd_clientes[nif]
-            print("Cliente Borrado")
+            continue
+        
+        del bd_clientes[nif]
+        print("Cliente Borrado")
+            
             
     elif x_menu == "3":
-        nif= input("Teclee el " + datos_clientes[0] + " del cliente a consultar:")
+        nif= input("Teclee el " + datos_clientes[0] + " del cliente a consultar: ")
             
         if nif not in bd_clientes.keys():
             print("Cliente no registrado en la base de datos")
-        else:
-            for key,value in bd_clientes[nif].items():
+            continue
+        
+        for key,value in bd_clientes[nif].items():
                 print(key,"=>", value)
+            
                 
     elif x_menu=="4":
+        if len(bd_clientes)==0:
+            print("No existen registros de clientes")
+            continue
+        
         for key,value in bd_clientes.items():
-            print(bd_clientes[key], "=>", value["nombre"])
+            print("NIF =>", key)
+            for llave, valor in value.items():
+                print(llave, "=>", valor)
+            print()
         
     elif x_menu=="5":
+        count=0
+        
         for key,value in bd_clientes.items():
             if value["preferente"]=="T" or value["preferente"]=="t":
-                print(bd_clientes[key], "=>", value["nombre"])
+                print(value["nombre"])
+                count+=1
+        
+        if count==0:
+            print("No existen clientes preferentes")
+            continue
+        
+                
             
