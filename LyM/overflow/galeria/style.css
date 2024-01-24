@@ -6,210 +6,175 @@
 
 .principal {
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .filas {
-    width: 100%;
+    width: 100vw;
 }
-
 
 .filas:first-of-type {
     display: flex;
-    flex-direction: column;
-    height: 40%;
+    height: 40vh;
 }
 
-.filas:first-of-type>div:first-of-type {
-    width: 100%;
-    height: 100vw;
+.filas:first-of-type>div:first-child {
+    width: 50vw;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://www.diariodesevilla.es/2023/01/20/wappissima/viajes/destinos-baratos-playa-Andalucia-verano_1758734718_174918335_1200x675.jpg);
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://www.civitatis.com/blog/wp-content/uploads/2021/02/mejores-playas-espana.jpg);
     background-position: center;
     background-size: cover;
 }
 
+.filas:first-of-type>div:last-child {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.filas:first-of-type>div:last-of-type {
+.filas:first-of-type>div:last-child>div:first-child {
+    display: flex;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 80%;
     
-    & div {
-        width: 100%;
-    }
 }
 
-.filas:first-of-type>div:last-of-type>div:first-of-type {
-    display: flex;
-    flex-direction: column;
-    
-    & div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        gap: 5px;
-
-        & div {
-            width: 60px;
-        }
-    }
-
-    & div:first-child {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://viajes.nationalgeographic.com.es/medio/2022/05/04/cuesta-maneli-huelva_47500834_2000x1333.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 100vw;
-    }
-
-    & div:last-child {
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(https://concepto.de/wp-content/uploads/2018/08/Londres-e1533855310803.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 100vw;
-
-    }
-}
-
-.filas:first-of-type>div:last-of-type>div:last-of-type {
-    height: 25%;
+.filas:first-of-type>div:last-child>div:first-child>div {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    width: 50%;
+    height: 100%;
 }
 
+.filas:first-of-type>div:last-child>div:first-child>div:first-of-type {
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://s2.ppllstatics.com/laverdad/www/multimedia/202206/13/media/cortadas/playa-zakynthos-kJdH-U170402206703Z6E-1248x770@La%20Verdad.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
 
+.filas:first-of-type>div:last-child>div:first-child>div:nth-of-type(2) {
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://viajes.nationalgeographic.com.es/medio/2023/06/26/cala-granadella_00000000_56d03b8e_230626093830_1280x853.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
 
-
+.filas:first-of-type>div:last-child>div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
 
 
 .filas:nth-of-type(2) {
     display: flex;
-    flex-direction: column;
-
-    & div:first-of-type {
-        width: 100%;
-        height: 100vw;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .7)), url(https://a.cdn-hotels.com/gdcs/production0/d904/1a2db549-b49d-4845-aa19-c9d72f4266c2.jpg);
-        background-position: center;
-        background-position: cover;
-    }
-
-    & div:nth-of-type(2) {
-        width: 100%;
-        height: 100vw;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .3) 10%, rgba(0, 0, 0, .6) ), url(https://badun.nestle.es/imgserver/v1/80/1290x742/515e61e60e84-trufas-de-chocolate.jpg);
-        background-position: center;
-        background-size: cover;
-    }
-
-    & div:last-of-type {
-        width: 100%;
-        height: 100vw;
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5) 10%, rgba(0, 0, 0, .5) ), url(https://services.gsu.edu/files/2021/10/Screen-Shot-2021-10-22-at-2.03.15-PM1.png);
-        background-position: center;
-        background-size: cover;
-
-    }
-
+    height: 30vh;
+    
 }
 
 .filas:nth-of-type(2)>div {
-    width: 33.333%;
+    display: flex;
+    width: calc(100vw/3);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 10px;
+    color: white;
 }
 
+.filas:nth-of-type(2)>div:first-child {
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://s3.abcstatics.com/media/gurmesevilla/2012/01/comida-rapida-casera.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.filas:nth-of-type(2)>div:nth-child(2) {
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://www.sotc.in/blog/wp-content/uploads/2023/08/street-food-places-in-Bangalore.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
+.filas:nth-of-type(2)>div:nth-child(3) {
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://anamariareyes2000.files.wordpress.com/2015/01/cuy-bac3b1os-ecuador-travel-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 .filas:nth-of-type(3) {
     display: flex;
-    flex-direction: column;
-    height: 27%;
+    height: 25vh;
+    color: white;
 }
 
-.filas:nth-of-type(3)>div:first-of-type {
-    width: 100%;
-    height: 100vw;
+.filas:nth-of-type(3)>div:first-child {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
-    background-image: linear-gradient(to bottom,rgba(0,0,0,.4),rgba(0,0,0,.4)) ,url(https://img.asmedia.epimg.net/resizer/Tvd9NpvoldVB5mgPyGRqL_aVutQ=/1472x828/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/CTZTSYZFYOFL7ZBGOFQNTV6JQY.jpg);
+    gap: 10px;
+    width: 75%;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://viajes.nationalgeographic.com.es/medio/2023/05/18/museo-de-bellas-artes-de-bilbao_1f68e938_230518103220_1200x800.jpg);
     background-position: center;
     background-size: cover;
 }
 
+.filas:nth-of-type(3)>div:last-child {
 
-.filas:nth-of-type(3)>div:last-of-type {
-    width: 100%;
-    height: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3)),url(https://eaqxr36k8gu.exactdn.com/wp-content/uploads/2022/05/que-ver-hacer-cuenca-ecuador-terraza-negroni.jpg?strip=all&lossy=1&resize=1000%2C750&ssl=1);
+    gap: 10px;
+    width: 25%;
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)),url(https://img.asmedia.epimg.net/resizer/5Y_ssPbYHLYjdqhdYg-2-_PGs1o=/1472x1104/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/CTZTSYZFYOFL7ZBGOFQNTV6JQY.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
 }
 
 .filas:last-of-type {
     display: flex;
-    flex-direction: column;
-    
-    height: 8%;
 }
-
 
 .filas:last-of-type>div {
-    border: red solid;
-    width: 100%;
-    
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 5vh;
 }
+
 
 .info {
-    background: none !important;
-    width: 60px !important;
-    height: 20px !important;
+    width: 60px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3px;
-    color: #ffffff;
+}
+
+.info:hover{
     cursor: pointer;
+    animation:  700ms linear info-animation;   
 }
 
-.info:hover {
-    animation: pulse 1000ms ease-in-out;
-}
+@keyframes info-animation {
+    0% {
 
-@keyframes pulse {
-
-    50% {
-        transform: scale(1.4);
-        opacity: 0.4;
+    }
+    
+   50% {
+       transform:  scale(2,2);
     }
 }
