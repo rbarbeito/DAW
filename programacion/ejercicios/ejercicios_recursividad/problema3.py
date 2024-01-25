@@ -6,35 +6,37 @@
 
 
 
-while True:
-    try:
-        a = int(input("Entre el numero a: "))
+##while True:
+##    try:
+##        a = int(input("Entre el numero a: "))
+##
+##        if a < 0:
+##            print("El numero debe ser positivo")
+##            continue
+##        else:
+##            break
+##
+##    except ValueError:
+##        print("El valor debe ser un numero")
+##
+##while True:
+##    try:
+##        b = int(input("Entre el numero b: "))
+##
+##        if b > a :
+##            print("El numero debe ser menor que el numero a")
+##            continue
+##        elif b < 0:
+##            print("El numero debe ser positivo")
+##            continue
+##        else:
+##            break
+##
+##    except ValueError:
+##        print("El valor debe ser un numero")
 
-        if a < 0:
-            print("El numero debe ser positivo")
-            continue
-        else:
-            break
-
-    except ValueError:
-        print("El valor debe ser un numero")
-
-while True:
-    try:
-        b = int(input("Entre el numero b: "))
-
-        if b > a :
-            print("El numero debe ser menor que el numero a")
-            continue
-        elif b < 0:
-            print("El numero debe ser positivo")
-            continue
-        else:
-            break
-
-    except ValueError:
-        print("El valor debe ser un numero")
-        
+a=509867
+b=9467
         
 count=0
 

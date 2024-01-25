@@ -4,17 +4,17 @@
 #   repetido en a Por ejemplo, si a es {'g','g','a','c','t','a','g','a'} y c es
 #   'a' el método devuelve true. Para el mismo array, si c es 't' el método devuelve false.
 
-list=['g','g','a','c','t','a','g','a']
+lista=['g','g','a','c','t','a','g','a']
 
-count=0
+##count=0
 
 a=input("Carácter a buscar: ")
 
-for i in list:
-    if a==i:
-        count+=1
+##for i in list:
+##    if a==i:
+##        count+=1
+##
+##    if count>1:
+##        break
 
-    if count>1:
-        break
-
-print(count>1)
+print(len([i for i in lista if i==a])>1)

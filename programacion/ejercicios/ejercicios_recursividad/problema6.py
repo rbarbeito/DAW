@@ -3,7 +3,7 @@
 #   que la componente i del resultado contiene la suma de las componentes en a[0...i]
 #   Por ejemplo, si a = {1 4 2 1 0 3} devuelven el array {1 5 7 6 6 9}
 
-list=[1 ,4 ,2, 1, 0 ,3]
+list=[1, 4, 2, -1, 0, 3]
 
 print("Creando la lista inicial")
 

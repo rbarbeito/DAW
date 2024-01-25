@@ -16,7 +16,7 @@ while True:
     try:
         b = int(input("Entre el numero a buscar: "))
 
-        if b < 0 and b > 9:
+        if b > 0 and b < 9:
             print("El numero debe ser mayor que cero y menor que nueve")
             continue
         else:
