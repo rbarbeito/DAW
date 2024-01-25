@@ -1,18 +1,34 @@
-# Dado a un array de char y un char c, el siguiente método escribe en la salida
-# estándar los sucesivos prefijos de a, de más corto a más largo, que no
-# contienen el carácter c.
-test = [0 for i in range(14)]
-count = 1
-i = 0
+####Dado a un array de char y un char c, el siguiente método escribe en la salida
+####estándar los sucesivos prefijos de a, de más corto a más largo, que no
+####contienen el carácter c.
 
-while i < len(test):
-    test[i] = count
+a = [0 for x in range(100)]
+lista = []
 
-    if i == 0:
-        i = len(test) // 2
+inicio = 0
+long = len(a)
+
+
+while long > 0:
+    inicio += 1
+
+    if long % 2 == 0:
+        tamano = long//2 - 1
     else:
-        i += len(test[i:])//2+1
+        tamano = long//2
 
-    count += 1
-    print(test)
-print(test)
+    long //= 2
+
+    lista += [inicio] + [0 for x in range(tamano)]
+
+print(lista)
+
+   
+
+    
+    
+    
+
+
+    
+

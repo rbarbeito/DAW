@@ -1,4 +1,4 @@
-test = [0 for i in range(14)]
+test = [0 for i in range(100)]
 count = 1
 i= 0
 while i < len(test):
@@ -6,6 +6,8 @@ while i < len(test):
     if i == 0:
         i = len(test) // 2
     else:
-        i = len(test[i:])//2
-    print(test)
+        i += len(test[i:])//2 + 1
+
+
+    count+=1
 print(test)
