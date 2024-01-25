@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inknut Antiqua', serif;
+
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header>div:first-child {
+    height: 155px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    background-color: white;
+   
+}
+
+
+header>div:first-child>div {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 47.5px;
+
+    & h1 {
+        font-size: 60px;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+}
+
+header>div:last-child {
+    height: 102px;
+    width: 100vw;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header>div:last-child>nav>ul {
+    list-style-type: none;
+}
+
+header>div:last-child>nav>ul>li:nth-of-type(2) {
+    margin-inline: 84px;
+}
+
+header>div:last-child>nav>ul>li>a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+header>div:last-child>nav>ul>li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: calc(calc(100% - calc(349px*3))/4);
+    row-gap: 25px;
+    padding-block: 30px;
+}
+
+main>section {
+    width: 349px;
+    height: 350px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>section>div {
+    width: 100%;
+}
+
+main>section>div:first-child {
+    height: 70%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#imgen1 {
+    background: url(https://www.ikea.com/es/es/images/products/gladom-mesa-bandeja-negro__0837072_pe664992_s5.jpg?f=s), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#imgen2 {
+    background: url(https://www.ikea.com/es/es/images/products/malm-estructura-cama-con-4-cajones-negro-marron__1101552_pe866728_s5.jpg?f=xl), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#imgen3 {
+    background: url(https://www.ikea.com/es/es/images/products/besta-mueble-tv-gris-oscuro-lappviken-gris-oscuro__1221386_pe913783_s5.jpg?f=s), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main>section>div:nth-child(2) {
+    display: flex;
+    height: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
+
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 14px;
+}
+
+main>section>div:last-child {
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 24px;
+}
+
+.precio {
+    color: #B519B8;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+footer {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    background: #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 37px 201px;
+}
+
+footer>div {
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding-block: calc(52px - 20px);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer>div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+
+}
+
+
+
+.button {
+    width: 105px;
+    height: 26px;
+    border-radius: 20px;
+    background: #14C9E1;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    padding-inline: 14px;
+    font-size: 10px;
+}

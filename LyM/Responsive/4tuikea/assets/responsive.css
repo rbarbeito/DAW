@@ -1,0 +1,66 @@
+@media screen and (max-width: 764px)  {
+   
+    .checkbtn{
+        display:block;
+        color:black;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(98, 98, 98);
+        top: 257px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+    
+    header>div:last-child>nav>ul>li{
+        display: block;
+        margin: 20px 0;
+        line-height: 90px;
+        
+    }
+
+    header>div:last-child>nav>ul>li>a{
+        color:white;
+        font-size: 20px;
+    }
+
+    #check:checked~ul{
+        left: 0;
+        opacity: .8;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: start;
+        position: initial;
+        width: 100vw;
+        height: initial;
+        padding: 3px 201px;
+        position: relative;
+        height: 220px;
+
+    }
+
+    footer>div {
+        width: 90vw;
+        height: 45px;
+        font-size: 20px;
+        padding-block: calc(45px - 10px);
+    }
+
+    footer>div:nth-of-type(2) {
+        position:absolute;
+        top:150px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        font-size: 40px;
+    
+    }
+
+
+}
