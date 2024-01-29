@@ -33,4 +33,12 @@ ALTER USER 'jeffrey'@'localhost' WITH MAX_QUERIES_PER_HOUR 90;
 --Mostrar los permisos de un usuario determinado
 SHOW GRANTS FOR jeffrey;
 
+--Revocar los permisos
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'user'@'localhost';
 ```
+
+## Listar Bases de datos
+```SQL
+SHOW DATABASES;
+```
+ 
