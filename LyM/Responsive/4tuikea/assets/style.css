@@ -1,8 +1,15 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Inknut Antiqua', serif;
+    font-family: 'Inknut Antiqua', serif;#
+}
 
+:root{
+    --width-section: 270px;
+    --height-section: 300px;
+    --padding-content-section : 24px;
+    --top-menu-burger: 180px;
+    --height-footer:80px;
 }
 
 header {
@@ -13,7 +20,7 @@ header {
 }
 
 header>div:first-child {
-    height: 155px;
+    height: 100px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -33,7 +40,7 @@ header>div:first-child>div {
     padding-block: 47.5px;
 
     & h1 {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 400;
         font-style: normal;
 
@@ -42,7 +49,7 @@ header>div:first-child>div {
 }
 
 header>div:last-child {
-    height: 102px;
+    height: 80px;
     width: 100vw;
     background-color: #EDEDED;
     display: flex;
@@ -55,8 +62,9 @@ header>div:last-child>nav>ul {
     list-style-type: none;
 }
 
+
 header>div:last-child>nav>ul>li:nth-of-type(2) {
-    margin-inline: 84px;
+    margin-inline: 184px;
 }
 
 header>div:last-child>nav>ul>li>a {
@@ -68,8 +76,8 @@ header>div:last-child>nav>ul>li>a {
 
 .checkbtn {
     font-size: 30px;
-    color: white;
-    float: right;
+    color: black;
+    float: left;
     line-height: 80px;
     margin-right: 40px;
     cursor: pointer;
@@ -79,8 +87,6 @@ header>div:last-child>nav>ul>li>a {
 #check {
     display: none;
 }
-
-
 
 header>div:last-child>nav>ul>li {
     display: inline-block;
@@ -102,24 +108,64 @@ main {
 }
 
 main>section {
-    width: 349px;
-    height: 350px;
+    width: var(--width-section);
+    height: var(--height-section);
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 main>section>div {
-    width: 100%;
+    width: var(--width-section);
 }
 
 main>section>div:first-child {
     height: 70%;
     border-radius: 20px 20px 0px 0px;
 }
+
+
+main>section>div:nth-child(2) {
+    width: var(--width-section);
+    display: flex;
+    height: 10%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: var(--padding-content-section);
+    
+    color: #000;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+
+main>section>div:last-child {
+    /* border: 1px solid red; */
+    width: var(--width-section);
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--padding-content-section);
+    box-sizing: border-box;
+}
+
+
+.precio {
+    color: #B519B8;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
 
 #imgen1 {
     background: url(https://www.ikea.com/es/es/images/products/gladom-mesa-bandeja-negro__0837072_pe664992_s5.jpg?f=s), lightgray 50% / cover no-repeat;
@@ -140,41 +186,10 @@ main>section>div:first-child {
     background-position: center;
 }
 
-main>section>div:nth-child(2) {
-    display: flex;
-    height: 10%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 24px;
-
-    color: #000;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: 14px;
-}
-
-main>section>div:last-child {
-    height: 20%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 24px;
-}
-
-.precio {
-    color: #B519B8;
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-
 
 footer {
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    height: var(--height-footer);
     position: fixed;
     bottom: 0;
     background: #EDEDED;
@@ -182,13 +197,12 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 37px 201px;
+    
 }
 
 footer>div {
-    height: 52px;
     display: flex;
     align-items: center;
-    padding-block: calc(52px - 20px);
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -196,13 +210,8 @@ footer>div {
 }
 
 footer>div:nth-of-type(2) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-
+    font-size: 30px;
 }
-
 
 
 .button {
@@ -214,4 +223,8 @@ footer>div:nth-of-type(2) {
     color: white;
     padding-inline: 14px;
     font-size: 10px;
+}
+
+.button:hover{
+    cursor: pointer;
 }

@@ -2,7 +2,7 @@
 ####estándar los sucesivos prefijos de a, de más corto a más largo, que no
 ####contienen el carácter c.
 
-a = [0 for x in range(100)]
+a = [0 for x in range(14)]
 lista = []
 
 inicio = 0

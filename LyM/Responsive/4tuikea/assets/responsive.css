@@ -1,65 +1,275 @@
-@media screen and (max-width: 764px)  {
-   
-    .checkbtn{
-        display:block;
-        color:black;
+/* Dispositivos moviles */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    :root {
+        --width-section: 300px;
+        --height-section: 330px;
+        --height-footer: 150px;
+        --padding-content-section: 12px;
+        --top-menu-burger: 160px;
     }
 
-    ul{
+    /* Configuracion de la hamburguesa */
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: rgb(98, 98, 98);
-        top: 257px;
+        background-color: #123456;
+        top: var(--top-menu-burger);
         left: -100%;
         text-align: center;
         transition: .5s;
     }
-    
-    header>div:last-child>nav>ul>li{
+
+
+    /* Configuracion del header */
+
+    header>div:last-child>nav>ul>li {
         display: block;
         margin: 20px 0;
         line-height: 90px;
-        
     }
 
-    header>div:last-child>nav>ul>li>a{
-        color:white;
+    header>div:last-child>nav>ul>li>a {
         font-size: 20px;
+        color: white;
     }
 
-    #check:checked~ul{
+    #check:checked~ul {
         left: 0;
         opacity: .8;
     }
 
-    footer {
-        flex-direction: column;
-        justify-content: start;
-        position: initial;
-        width: 100vw;
-        height: initial;
-        padding: 3px 201px;
-        position: relative;
-        height: 220px;
+    header>div:first-child {
+        height: 70px;
+    }
+
+    header>div:first-child>div {
+
+        & h1 {
+            font-size: 30px;
+
+        }
 
     }
 
-    footer>div {
-        width: 90vw;
-        height: 45px;
-        font-size: 20px;
-        padding-block: calc(45px - 10px);
+    header>div:last-child {
+        height: 60px;
+
+    }
+
+    /*  COnfiguración del main */
+
+    main {
+        row-gap: 45px;
+    }
+
+    main>section {
+        width: var(--width-section);
+        height: var(--height-section);
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main>section>div:last-child {
+        width: var(--width-section);
+
+        padding-inline: var(--padding-content-section);
+    }
+
+    /* Configuración del footer */
+
+    footer {
+        width: 100%;
+        height: var(--height-footer);
+        position: relative;
+        background: #EDEDED;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: initial;
+        padding: 25px 20px;
     }
 
     footer>div:nth-of-type(2) {
-        position:absolute;
-        top:150px;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        font-size: 40px;
+        position: absolute;
+        bottom: 35px;
+        font-size: 30px;
+
+
+    }
+
+}
+
+/* ipad y Tables */
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+
+    /*  COnfiguración del main */
+
+    :root {
+        --width-section: 300px;
+        --height-section: 360px;
+        --height-footer: 100px;
+        --padding-content-section: 12px;
+        --top-menu-burger: 160px;
+    }
+
+    /* configuracion del header */
+    header>div:last-child>nav>ul>li:nth-of-type(2) {
+        margin-inline: 84px;
+    }
     
+
+    /* Configuracion del main */
+
+    main {
+        gap: 50px;
+        row-gap: 45px;
+    }
+
+    /* Configuración del footer */
+
+    footer {
+        width: 100%;
+        height: var(--height-footer);
+        position: relative;
+        background: #EDEDED;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    footer>div {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    footer>div:nth-of-type(2) {
+        font-size: 30px;
+    }
+
+}
+
+/* pantallas pequeñas, ordenadores portátiles */
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+    :root {
+        --width-section: 300px;
+        --height-section: 360px;
+        --height-footer: 120px;
+        --padding-content-section: 12px;
+        --top-menu-burger: 160px;
+    }
+
+      /* configuracion del header */
+    header>div:last-child>nav>ul>li:nth-of-type(2) {
+        margin-inline: 84px;
+    }
+    
+
+
+    /*  COnfiguración del main */
+
+    main {
+        gap: 50px;
+        row-gap: 45px;
+    }
+
+    main>section {
+        width: var(--width-section);
+        height: var(--height-section);
+        border-radius: 20px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main>section>div:last-child {
+        width: var(--width-section);
+        padding-inline: var(--padding-content-section);
+    }
+
+     /* Configuración del footer */
+
+     footer {
+        width: 100%;
+        height: var(--height-footer);
+        /* position: relative; */
+        background: #EDEDED;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    footer>div {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    footer>div:nth-of-type(2) {
+        font-size: 30px;
+    }
+
+}
+
+/* pantallas grandes, ordenadores de escritorio */
+@media only screen and (min-width : 1025px) and (max-width : 1200px) {}
+
+/* pantallas extra-grandes, televisores */
+@media only screen and (min-width : 1201px) and (min-height: 769px) {
+
+    :root {
+        --width-section: 300px;
+        --height-section: 360px;
+        --height-footer: 120px;
+        --padding-content-section: 12px;
+        --top-menu-burger: 160px;
+    }
+
+    /* Configuración del footer */
+
+    footer {
+        width: 100%;
+        height: var(--height-footer);
+        /* position: relative; */
+        background: #EDEDED;
+        padding: 10px;
+        box-sizing: border-box;
+        padding: 37px 201px;
+    }
+
+    footer>div {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    footer>div:nth-of-type(2) {
+        font-size: 30px;
     }
 
 
