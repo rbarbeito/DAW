@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Inknut Antiqua', serif;#
+    font-family: 'Inknut Antiqua', serif;
 }
 
 :root{
@@ -61,7 +61,6 @@ header>div:last-child {
 header>div:last-child>nav>ul {
     list-style-type: none;
 }
-
 
 header>div:last-child>nav>ul>li:nth-of-type(2) {
     margin-inline: 184px;
@@ -195,22 +194,24 @@ footer {
     background: #EDEDED;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 37px 201px;
-    
+    justify-content: center;
 }
 
 footer>div {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 80%;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-footer>div:nth-of-type(2) {
+footer>div>div:first-of-type {
     font-size: 30px;
+    display:flex;
 }
 
 

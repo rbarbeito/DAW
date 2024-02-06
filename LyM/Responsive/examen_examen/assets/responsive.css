@@ -1,0 +1,86 @@
+/* Dispositivos moviles */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+
+    body {
+        min-height: unset;
+    }
+
+    main{
+        padding: 10px
+
+    }
+
+    .perfil-contacto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    .perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        margin-bottom: 10px;
+    
+        & p{
+            width: 95%;
+            text-align: center;
+        }
+    }
+    
+    .formulario{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .campos-formulario{
+        width: 96%;
+    }
+
+    .imagen {
+        left: unset;
+    }
+
+    .mensaje{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    article{
+        width: 90%;
+        height: 100px;
+        align-items: top;
+
+    
+        & .imagen{
+            left:unset;
+            width: 50px;
+            height: 50px;
+            top:-15px;
+        }
+    
+        & div:last-of-type{
+            width: 75%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2px;
+        }
+    }
+}
+
+    /* ipad y Tables */
+    @media only screen and (min-width : 481px) and (max-width : 768px) {}
+
+    /* pantallas pequeñas, ordenadores portátiles */
+    @media only screen and (min-width : 769px) and (max-width : 1024px) {}
+
+    /* pantallas grandes, ordenadores de escritorio */
+    @media only screen and (min-width : 1025px) and (max-width : 1200px) {}
+
+    /* pantallas extra-grandes, televisores */
+    @media only screen and (min-width : 1201px) {}

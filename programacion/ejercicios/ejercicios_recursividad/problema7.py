@@ -4,16 +4,16 @@
 
 a = [ 'a', 'b', 'c', 'd', 'e' ]
 
-while True:
+
     
-    for i in range(1,len(a)+1):
-        concatenar=''
-        for x in a[:i]:
-            concatenar+=x
+for i in range(1,len(a)+1):
+    concatenar=''
+    for x in a[:i]:
+        concatenar+=x
 
-        print(concatenar)
+    print(concatenar)
 
-    break
+ 
         
 
     

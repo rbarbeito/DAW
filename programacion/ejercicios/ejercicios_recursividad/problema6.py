@@ -3,9 +3,9 @@
 #   que la componente i del resultado contiene la suma de las componentes en a[0...i]
 #   Por ejemplo, si a = {1 4 2 1 0 3} devuelven el array {1 5 7 6 6 9}
 
-list=[1, 4, 2, -1, 0, 3]
+lista=[1, 4, 2, -1, 0, 3]
 
-print("Creando la lista inicial")
+##print("Creando la lista inicial")
 
 # while True:
 #     try:
@@ -19,16 +19,10 @@ print("Creando la lista inicial")
 #         print("\nSolo se aceptan números")
     
 
-if len(list) !=0: 
-    nueva_list=list[:1]
+if len(lista) !=0: 
+    nueva_lista=lista[:]
     
-    print(list)
-    
-    for i in range(2,len(list)+1):
-        sum=0
-        for x in range(0,i):
-            sum+=list[x]
-            
-        nueva_list.append(sum)
+    for i in range(1,len(lista)):
+        nueva_lista[i]=nueva_lista[i-1]+lista[i]
         
-print(nueva_list)
+print(nueva_lista)
