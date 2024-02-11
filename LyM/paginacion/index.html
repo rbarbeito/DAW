@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+        <div id="caja-imagen">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d8bf49eb-f01d-4851-810a-6aa6fc317107/defoec0-d0c0a40d-139d-482a-a043-6da7178296dd.png/v1/fill/w_1145,h_698/pokemon_logo_update_2021_by_obsolete00_defoec0-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTc1IiwicGF0aCI6IlwvZlwvZDhiZjQ5ZWItZjAxZC00ODUxLTgxMGEtNmFhNmZjMzE3MTA3XC9kZWZvZWMwLWQwYzBhNDBkLTEzOWQtNDgyYS1hMDQzLTZkYTcxNzgyOTZkZC5wbmciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.q5xiGiCiW5rIaSkzLpngofi4bsdFnlMMGEGIC14R5Ic" alt="logo 4tumon">
+        </div>
+        <ul id="lista">
+            <li>Inicio</li>
+            <li>Pokemon</li>
+            <li>Contacto</li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <h1>Los mejores Pokemon</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quisquam pariatur consequuntur tempora
+                perspiciatis voluptatibus.</p>
+        </div>
+        <div id="list-pokemon">
+            <div class="pokemon">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da4c8018-fd02-405a-aa3d-9ed90468efed/ddmi883-9653c734-0676-46fc-b515-ee13c0cac619.png/v1/fill/w_837,h_954/_144___articuno__galarian_form_update__by_briannabellerose_ddmi883-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY5MSIsInBhdGgiOiJcL2ZcL2RhNGM4MDE4LWZkMDItNDA1YS1hYTNkLTllZDkwNDY4ZWZlZFwvZGRtaTg4My05NjUzYzczNC0wNjc2LTQ2ZmMtYjUxNS1lZTEzYzBjYWM2MTkucG5nIiwid2lkdGgiOiI8PTE0ODQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.XjY3Bbrprr4V4Sk0pO_eBJ_NqmV_q9H87HGG0Va4iZY" alt="Foto pokemon">
+            </div>
+            <div class="pokemon">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da4c8018-fd02-405a-aa3d-9ed90468efed/deaptk3-5fe6f10c-9d2b-49c1-8399-d771b85bb6ca.png/v1/fill/w_878,h_911/_258___mudkip_by_briannabellerose_deaptk3-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMyOCIsInBhdGgiOiJcL2ZcL2RhNGM4MDE4LWZkMDItNDA1YS1hYTNkLTllZDkwNDY4ZWZlZFwvZGVhcHRrMy01ZmU2ZjEwYy05ZDJiLTQ5YzEtODM5OS1kNzcxYjg1YmI2Y2EucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.B4sroBm2S0_0sJ7Eae4LXMxx7J2wkaBZZIaAz7ACzks" alt="Foto pokemon">
+            </div>
+            <div class="pokemon">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da4c8018-fd02-405a-aa3d-9ed90468efed/daw99as-76860322-8016-4b96-921e-7b56ba5a6cb2.png/v1/fill/w_934,h_856/_0034___nidoking_by_briannabellerose_daw99as-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTQ2IiwicGF0aCI6IlwvZlwvZGE0YzgwMTgtZmQwMi00MDVhLWFhM2QtOWVkOTA0NjhlZmVkXC9kYXc5OWFzLTc2ODYwMzIyLTgwMTYtNGI5Ni05MjFlLTdiNTZiYTVhNmNiMi5wbmciLCJ3aWR0aCI6Ijw9MTAzMiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.RHSVK6oTDVOs8F_c-qnpUz6JguvBtCa8e1gQ-czLbJg" alt="Foto pokemon">
+            </div>
+            <div class="pokemon">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da4c8018-fd02-405a-aa3d-9ed90468efed/de8med5-2947482c-a848-47b7-bcb4-fb8304564501.png/v1/fill/w_872,h_916/_248___tyranitar_by_briannabellerose_de8med5-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTM0NSIsInBhdGgiOiJcL2ZcL2RhNGM4MDE4LWZkMDItNDA1YS1hYTNkLTllZDkwNDY4ZWZlZFwvZGU4bWVkNS0yOTQ3NDgyYy1hODQ4LTQ3YjctYmNiNC1mYjgzMDQ1NjQ1MDEucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.rT57g1fN8e2LFEBSIeA46-yBJebJeeEt6vvFs9XWFRw" alt="Foto pokemon">
+            </div>
+
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi soluta ipsum magni inventore nam corporis,
+            quibusdam nemo, necessitatibus fuga perspiciatis laudantium deleniti hic suscipit similique dolores! Neque
+            ut suscipit eveniet.</p>
+        <div id="paginacion">
+            <i class="fa-solid fa-angles-left"></i>
+            <span id="bn">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <i class="fa-solid fa-angles-right"></i>
+        </div>
+
+    </main>
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <p>4tumon@4tumon.com</p>
+        <a href="#">Política de privacidad</a>
+
+    </footer>
+
+</body>
+
+</html>

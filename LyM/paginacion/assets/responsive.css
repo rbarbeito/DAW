@@ -1,0 +1,51 @@
+/* Dispositivos moviles */
+@media only screen and (min-width : 320px) and (max-width : 480px) {}
+
+/* ipad y Tables */
+@media only screen and (min-width : 481px) and (max-width : 768px) {}
+
+/* pantallas pequeñas, ordenadores portátiles */
+@media only screen and (min-width : 769px) and (max-width : 1024px) {}
+
+/* pantallas grandes, ordenadores de escritorio */
+@media only screen and (min-width : 1025px) and (max-width : 1200px) {}
+
+/* pantallas extra-grandes, televisores */
+@media only screen and (min-width : 1201px)  {}
+
+
+@media screen and (max-width:768px){
+
+    .checkbtn{
+        display:block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #123456;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 20px 0;
+        line-height: 90px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    #check:checked~ul{
+        left: 0;
+        opacity: .8;
+    }
+
+    
+
+}
