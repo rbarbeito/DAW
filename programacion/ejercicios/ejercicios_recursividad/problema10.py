@@ -46,7 +46,7 @@ def asigSuc(n):
 
     print(a)
         
-asigSuc(7)    
+asigSuc(10000)    
     
     
     
