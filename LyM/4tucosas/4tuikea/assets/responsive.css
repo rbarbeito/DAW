@@ -92,8 +92,7 @@
     /* Configuración del footer */
 
     footer{
-        position:initial;
-        bottom:0;
+        position:static;
         padding: 20px;
         
     }

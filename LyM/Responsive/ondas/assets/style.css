@@ -6,15 +6,36 @@
     font-style: normal;
     scroll-behavior: smooth;
     font-weight: 300;
+    font-size:16px;
 }
 
 :root {
     --height-header: 80px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* position: relative; */
+}
+
+.scroll-watcher{
+    height: 3px;
+    position: fixed;
+    top: calc(var(--height-header) - 2px);
+    z-index: 1000;
+    background-color:rgba(0, 172, 193, 1);
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
 .logo {
-    --logo-font-size:25px;
-    --logo-font-spacing:10px;
+    --logo-font-size: 25px;
+    --logo-font-spacing: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,12 +54,28 @@
     }
 }
 
+h1 {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
 
 header {
     width: 100%;
     position: fixed;
     top: 0;
     background: #000000;
+    z-index: 1;
 
     & div {
         display: flex;
@@ -76,25 +113,14 @@ header {
     }
 }
 
+
+
 main {
     margin-top: var(--height-header);
-    padding: 10px 30px;
-
-    h1 {
-        font-weight: 800;
-        font-size: 45px;
-    }
-
-    h2{
-        font-weight: 800;
-        font-size: 40px;
-    }
 
     section {
         width: 100%;
         height: calc(100vh - var(--height-header));
-        /* margin-bottom: var(--height-header); */
-        /* border: 1px solid red; */
     }
 
     #contacto,
@@ -104,29 +130,85 @@ main {
     }
 
     #acerca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         height: calc(100vh - var(--height-header));
-        border: 1px solid aqua;
-        & div{
-            border: 1px solid aqua;
+        border-radius: 72% 28% 79% 21% / 9% 64% 36% 91% ;
+        background: #ecf6f8;
+        position: relative;
+
+        & .header {
+            width: fit-content;
+            position: relative;
+            left: -150px;
         }
-
-        & .image{
+        
+        & .image {
+            --tamagno-foto:300px;
             border-radius: 50%;
-            width: 250px;
-            height: 250px;
+            box-shadow: 0 0 20px #84becc;
+            width: var(--tamagno-foto);
+            height: var(--tamagno-foto);
             overflow: hidden;
+            position: absolute;
+            left: 800px;
+            top: 70px;
 
-            & img{
+            /* scale: .8;    opacity: 0; */
+            /* animation: fade-in-foto linear forwards;
+            animation-timeline: view();
+            animation-range: contain 0px; */
+            
+            & img {
                 width: 100%;
             }
-
+            
         }
-
-        .intro>span{
-            width: fit-content;
-            margin-inline-end: 15px;
+        
+        & .column {
+            width: 600px;
+        }
+        
+        & .intro {
+            position: relative;
+            left: -300px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            & span {
+                width: fit-content;
+                margin-inline-end: 15px;
+            }
+        }
+        
+        & .skills {
+            position: relative;
+            top: 10px;
+            left: -300px;
+            
+            & ul {
+                list-style-position: inside;
+                list-style: none;
+                
+                & li {
+                    margin-inline-start: 15px;
+                }
+            }
+        }
+        
+        & .main-text {
+            width: 900px;
+            position: relative;
+            /* top: -150px; */
+            left: 150px;
         }
     }
+
+
+
 
 }
 
@@ -135,37 +217,43 @@ main {
 
 
 footer {
-    position: relative;
-    text-align: center;
-    height: 500px;
+    --height-footer:300px;
+    text-align: center; 
+    height: calc(var(--height-footer) + 60px);
     background: linear-gradient(60deg, hsl(252, 52%, 47%) 0%, rgba(0, 172, 193, 1) 100%);
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 
-.waves {
-    position: relative;
+.svg{
     width: 100%;
-    height: 15vh;
-    margin-bottom: -7px;
-    min-height: 100px;
-    max-height: 150px;
-    transform: scale(-1);
+
+    .waves {
+        position: relative;
+        width: 100%;
+        height: var(--height-footer);
+        margin-bottom: -7px;
+        min-height: 100px;
+        max-height: 150px;
+        transform: scale(-1);
+    }
 }
 
 .contenido-footer {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
-    position: absolute;
     width: 100%;
-    padding: 50px 0px;
     gap: 25px;
 
 
     & div {
         width: 30%;
-        height: 250px;
+        min-height: 150px;
     }
 
     & .links {
@@ -175,18 +263,21 @@ footer {
         justify-content: center;
         gap: 15px;
 
+        & h5 {
+            font-size: 18px;
+            
+        }
+
         & span {
             display: flex;
             height: 30px;
 
-            & h5 {
-                font-size: 18px;
-            }
+          
         }
 
         & .logo {
-            --logo-font-size:12px;
-            --logo-font-spacing:6px;
+            --logo-font-size: 12px;
+            --logo-font-spacing: 6px;
             display: flex;
             gap: var(--logo-font-spacing);
             font-size: var(--logo-font-size);
@@ -205,7 +296,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 30px;
+        font-size: 40px;
         gap: 15px;
 
         & a {
@@ -254,8 +345,37 @@ footer {
     }
 }
 
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+}
+
+
+/** 
+* The `@media(prefers-reduce-motion:no-prefers)` rule is a media query 
+* that targets devices where the user has not indicated a preference for reduced motion. */
+/* @media(prefers-reduce-motion:no-prefers){
+
+    #acerca {
+
+        & .image {
+            scale: .8;    opacity: 0;
+            animation: fade-in-foto linear forwards;
+            animation-timeline: view();
+            animation-range: 250px 500px;
+        }
+
+    }
+
+    @keyframes fade-in-foto {
+        to{scale:1; opacity: 1;}
+    }
+} */
+
+
+
+
 /*Shrinking for mobile*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .waves {
         height: 40px;
         min-height: 40px;
@@ -268,4 +388,4 @@ footer {
     h1 {
         font-size: 24px;
     }
-}
+} */
