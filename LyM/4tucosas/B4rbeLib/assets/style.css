@@ -94,9 +94,9 @@ header {
                     color: var(--golden-tainoi-300);
                 }
 
-                & a:visited {
+                /* & a:visited {
                     color: var(--golden-tainoi-700)
-                }
+                } */
             }
 
             & li:hover {
@@ -425,7 +425,7 @@ main {
 
 
             & div:first-of-type {
-                border: 1px solid;
+                border: 1px solid red;
                 width: 400px;
                 height: 300px;
                 position: relative;
@@ -587,12 +587,65 @@ footer {
                 left: 0;
                 /* opacity: .8; */
             }
+
+
         }
 
 
     }
 
 
+    main {
+
+        & #libros {
+
+            & .colecciones {
+                /* width: 95%; */
+                padding-bottom: 3px;
+
+                & ul {
+
+                    overflow-x: scroll;
+                    padding-bottom: 3px;
+                    scrollbar-color: rebeccapurple green;
+                }
+            }
+        }
+
+        & #contacto {
+            padding-top: 0px;
+
+            & .contenedor-contacto {
+                width: 100%;
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+
+
+                & div:first-of-type {
+                    height: 150px;
+                    width: 150px;
+                    border-radius: 50%;
+                    left: inherit;
+                    top: 60px;
+                    background: url('./images/coffee-1869772_1920.webp');
+                    background-size: cover;
+
+
+                }
+
+                & div:last-of-type {
+                    width: 90%;
+                    height: 400px;
+
+                }
+            }
+        }
+
+    }
 
     footer {
         flex-direction: column;
@@ -600,6 +653,8 @@ footer {
         align-items: flex-start;
         padding: 10px;
         height: auto;
+        height: inherit;
+        border: 1px solid white;
 
         & section {
             height: fit-content;
@@ -610,6 +665,7 @@ footer {
             flex-direction: column;
             justify-content: start;
             color: var(--golden-tainoi-50);
+            padding-inline-start: inherit;
         }
 
         & section:last-of-type {
@@ -618,5 +674,6 @@ footer {
 
 
     }
+
 
 }

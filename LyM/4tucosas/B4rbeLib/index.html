@@ -30,9 +30,9 @@
                 <h1>Livraria</h1>
             </div>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#libros">Libros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a class="menu-inicio" href="#">Inicio</a></li>
+                <li><a class="menu-inicio" href="#libros">Libros</a></li>
+                <li><a class="menu-inicio" href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -55,13 +55,14 @@
 
             </div>
         </section>
+
         <section id="libros">
             <div class="colecciones">
                 <ul>
                     <li><a href="#libros">Ficción</a></li>
                     <li><a href="#libros">Infantil</a></li>
                     <li><a href="#libros">Juvenil</a></li>
-                    <li><a href="#libros">Cómic y Manga</a></li>
+                    <li><a href="#libros">Cómics</a></li>
                     <li><a href="#libros">Papelería</a></li>
                     <li><a href="#libros">eBooks</a></li>
                     <li><a href="#libros">Ofertas</a></li>
@@ -199,6 +200,20 @@
 
     </footer>
 
+
+    <script>
+        let checkboxBurguer = document.getElementById('hamburguesa-icono')
+        let ulMenu=document.querySelectorAll('.menu-inicio')
+
+        ulMenu.forEach(el => {
+            el.addEventListener("click", ()=>{
+                checkboxBurguer.checked = ! checkboxBurguer.checked
+            })
+        });
+
+
+
+    </script>
 </body>
 
 </html>
