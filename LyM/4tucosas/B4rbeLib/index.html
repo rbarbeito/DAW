@@ -18,7 +18,6 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/responsive.css">
 </head>
 
 <body>
@@ -92,7 +91,8 @@
 
                 <article>
                     <div class="portada">
-                        <img src="https://imagessl0.casadellibro.com/a/l/s5/70/9788419507570.webp" alt="Ciudad Media Luna">
+                        <img src="https://imagessl0.casadellibro.com/a/l/s5/70/9788419507570.webp"
+                            alt="Ciudad Media Luna">
                     </div>
                     <p class="tapa-libro">Tapa Blanda</p>
                     <p class="titulo-libro">título</p>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </article>
-              
+
 
                 <article>
                     <div class="portada">
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </article>
-               
+
 
                 <article>
                     <div class="portada">
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                 </article>
-               
+
 
             </div>
 
@@ -166,8 +166,28 @@
         </section>
         <section id="contacto">
             <div class="contenedor-contacto">
-                <div class="informacion"></div>
-                <div class="formulario"></div>
+                
+                    <div class="informacion">
+                        <a href="https://storyset.com/internet">Internet illustrations by Storyset</a>
+                    </div>
+                    <div class="formulario">
+                        <h3>Contáctenos</h3>
+                        <p>Nuestros especialistas estan esperando para brindarte ayuda</p>
+                        <form>
+                            <input type="text" name="name" id="name" required placeholder="Nombre y Apellidos">
+                            <input type="tel" name="telefono" id="telefono" placeholder="Teléfono">
+                            <input type="email" name="email" id="email" required placeholder="usuario@dominio.com">
+                            <textarea name="contenido" id="contenido" placeholder="Hola...." required></textarea>
+                            <label for="terminos">
+                                <input type="checkbox" name="terminos" id="terminos" required>
+                                Acepto los &nbsp; <a href="#contacto"> Términos y Condiciones</a>
+                            </label>
+                            <button>Enviar</button>
+                        </form>
+                    </div>
+                    <div class="relleno"></div>
+                
+
             </div>
 
         </section>
@@ -203,11 +223,11 @@
 
     <script>
         let checkboxBurguer = document.getElementById('hamburguesa-icono')
-        let ulMenu=document.querySelectorAll('.menu-inicio')
+        let ulMenu = document.querySelectorAll('.menu-inicio')
 
         ulMenu.forEach(el => {
-            el.addEventListener("click", ()=>{
-                checkboxBurguer.checked = ! checkboxBurguer.checked
+            el.addEventListener("click", () => {
+                checkboxBurguer.checked = !checkboxBurguer.checked
             })
         });
 

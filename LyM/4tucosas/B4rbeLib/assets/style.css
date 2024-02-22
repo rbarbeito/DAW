@@ -58,7 +58,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        height: 60;
+        height: 60px;
 
         & input {
             display: none;
@@ -125,14 +125,15 @@ main {
             width: 100%;
             height: calc(100vh - var(--header-height));
             top: var(--header-height);
-            background-position: center;
-            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
             position: sticky;
+            background: linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .98)), url('https://offloadmedia.feverup.com/barcelonasecreta.com/wp-content/uploads/2016/11/09111401/image-2-2-1024x597.jpg');
+            background-size: cover;
+            background-position: center;
             overflow: hidden;
-            background: linear-gradient(180deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .98)), url('./images/coffee-1869772_1920.webp');
+
 
 
             & .llamada-contenido {
@@ -183,7 +184,7 @@ main {
 
     /* libros */
     & #libros {
-        padding-top: var(--header-height);
+        padding-top: calc(var(--header-height) + 10px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -202,6 +203,7 @@ main {
                 width: 70%;
                 display: flex;
                 justify-content: center;
+                padding-bottom: 10px;
                 border-bottom: 1px solid var(--tiber-700);
 
                 list-style: none;
@@ -209,12 +211,26 @@ main {
                 & li {
                     display: inline;
                     margin-inline: 15px;
+                    padding: 3px 10px;
 
                     & a {
 
                         text-decoration: none;
                         color: var(--tiber-950);
                     }
+
+                }
+
+                & li:last-of-type {
+                    background: var(--golden-tainoi-950);
+                    border-radius: 5px;
+
+                    & a {
+
+                        color: var(--golden-tainoi-200);
+                    }
+
+
                 }
 
             }
@@ -314,13 +330,14 @@ main {
                     visibility: hidden;
                     position: absolute;
                     width: 90%;
-                    height: 120px;
+                    height: 125px;
                     bottom: 15px;
                     background-color: white;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
                     padding: 10px;
+                    animation: 10s linear;
 
 
                     & div {
@@ -409,11 +426,15 @@ main {
     /* Seccion de contactos */
     & #contacto {
 
-        padding-top: var(--header-height);
+        padding-top: calc(var(--header-height) + 10px);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        min-height: 100vh;
+        height: 100vh;
+        position: relative;
+
+
 
         & .contenedor-contacto {
             width: 100%;
@@ -423,28 +444,126 @@ main {
             justify-content: center;
             position: relative;
 
+            & .relleno {
+                width: 90%;
+                height: 80%;
+                position: absolute;
+                z-index: -10;
+                background: var(--golden-tainoi-50);
+                border-radius: 74% 26% 65% 35% / 41% 77% 23% 59%;
+            }
+
 
             & div:first-of-type {
-                border: 1px solid red;
                 width: 400px;
-                height: 300px;
+                height: 350px;
                 position: relative;
-                left: 50px;
+                left: 80px;
                 border-radius: 60px;
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 padding: 20px;
-                z-index: 1;
+                z-index: 2;
+                background: url('./images/Emails-amico.svg');
+                background-position: center;
+                background-repeat: none;
+                background-size: cover;
+                color: var(--golden-tainoi-50);
+                position: relative;
+
+                & a {
+                    text-decoration: none;
+                    font-size: smaller;
+                    color: var(--tiber-800);
+                    position: relative;
+                    bottom: -160px;
+
+
+                }
+
 
 
             }
 
-            & div:last-of-type {
+            & div:nth-of-type(2) {
                 width: 600px;
-                height: 400px;
+                height: 500px;
                 border-radius: 25px;
                 box-shadow: 0 0 10px var(--tiber-950);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                background-color: white;
+                z-index: 1;
+
+                & h3 {
+                    font-size: xx-large;
+                }
+
+                & p {
+                    text-align: center;
+                        text-wrap:balance;
+                }
+
+                & form {
+                    margin-top: 10px;
+                    width: 80%;
+                    left: 0px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    ::placeholder {
+                        color: var(--tiber-600);
+                        font-size: small;
+                    }
+
+                    & input,
+                    textarea {
+                        width: 100%;
+                        padding: 4px 8px;
+                    }
+
+                    & textarea {
+                        height: 150px;
+                        resize: none;
+
+                    }
+
+                    & button {
+                        border: none;
+                        padding: 8px 16px;
+                        border-radius: 10px;
+                        cursor: pointer;
+
+                    }
+
+                    & label {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+
+                        & input {
+                            margin-inline: 5px;
+                            width: inherit;
+                        }
+
+                        & a {
+                            text-decoration: none;
+                            color: var(--tiber-800)
+                        }
+
+                        & a:visited {
+                            color: var(--golden-tainoi-700);
+                        }
+                    }
+                }
 
             }
         }
@@ -520,9 +639,10 @@ footer {
 
 
 
-
-
 /* Media queries */
+
+
+
 /* Dispositivos moviles */
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
@@ -531,27 +651,19 @@ footer {
 
 
         & nav {
-
             & input {
                 display: none;
             }
-
             & label {
                 margin-inline-start: 25px;
                 display: inherit;
-
                 & i {
                     font-size: 40px;
-
-
                 }
             }
-
             & .logo {
                 display: none;
             }
-
-
             & ul {
                 position: fixed;
                 top: var(--header-height);
@@ -564,28 +676,21 @@ footer {
                 align-items: center;
                 background-color: var(--tiber-800);
                 transition: .5s;
-
-
-
                 & li {
                     margin-block: 20px;
                     display: inherit;
                     margin-inline: 10px;
                     cursor: pointer;
-
                     & a {
                         font-size: xx-large;
                     }
                 }
-
                 & li:hover {
                     text-decoration: underline;
                 }
             }
-
             & #hamburguesa-icono:checked~ul {
                 left: 0;
-                /* opacity: .8; */
             }
 
 
@@ -600,23 +705,23 @@ footer {
         & #libros {
 
             & .colecciones {
-                /* width: 95%; */
                 padding-bottom: 3px;
-
+                width: 90%;
+                overflow-x: scroll;
+                
                 & ul {
+                    justify-content: start;
+                    width: 100%;
+                    scrollbar-color: var(--tiber-800) var(--golden-tainoi-400);
 
-                    overflow-x: scroll;
-                    padding-bottom: 3px;
-                    scrollbar-color: rebeccapurple green;
                 }
             }
         }
 
         & #contacto {
-            padding-top: 0px;
+            padding-top: 15px;
 
             & .contenedor-contacto {
-                width: 100%;
                 min-height: 100vh;
                 display: flex;
                 align-items: center;
@@ -624,22 +729,106 @@ footer {
                 flex-direction: column;
                 position: relative;
 
+                & .relleno {
+                    border-radius: 74% 26% 65% 35% / 41% 77% 23% 59%;
+                }
+
 
                 & div:first-of-type {
-                    height: 150px;
-                    width: 150px;
+                    height: 80px;
+                    width: 80px;
                     border-radius: 50%;
                     left: inherit;
-                    top: 60px;
+                    top: 16px;
                     background: url('./images/coffee-1869772_1920.webp');
                     background-size: cover;
 
+                    & a {
+                        display: none;
+                    }
 
                 }
 
-                & div:last-of-type {
+                & div:nth-of-type(2) {
                     width: 90%;
-                    height: 400px;
+                    height: 470px;
+                    border-radius: 25px;
+                    box-shadow: 0 0 10px var(--tiber-950);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 10px;
+                    background-color: white;
+                    z-index: 1;
+
+                    & h3 {
+                        font-size: x-large;
+                        margin-top: 10px;
+                    }
+
+                    & p {
+                        font-size: 12px;
+                        text-align: center;
+                        text-wrap:balance;
+                    }
+
+                    & form {
+                        margin-top: 10px;
+                        width: 80%;
+                        left: 0px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        ::placeholder {
+                            color: var(--tiber-600);
+                            font-size: small;
+                        }
+
+                        & input,
+                        textarea {
+                            width: 100%;
+                            padding: 4px 8px;
+                        }
+
+                        & textarea {
+                            height: 150px;
+
+                        }
+
+                        & button {
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 10px;
+                            cursor: pointer;
+
+                        }
+
+                        & label {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                            font-size: 12px;
+
+                            & input {
+                                margin-inline: 5px;
+                                width: inherit;
+                            }
+
+                            & a {
+                                text-decoration: none;
+                                color: var(--tiber-800);
+                                font-size: 12px;
+                            }
+
+                            & a:visited {
+                                color: var(--golden-tainoi-700);
+                            }
+                        }
+                    }
 
                 }
             }
@@ -676,4 +865,102 @@ footer {
     }
 
 
+}
+
+
+/* ipad y Tables */
+@media only screen and (min-width : 480px) and (max-width : 767px) {}
+
+/* pantallas pequeñas, ordenadores portátiles */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+
+    main {
+        /* Seccion de contactos */
+        & #contacto {
+
+            & .contenedor-contacto {
+                display:flex;
+                flex-direction: column;
+
+                & div:first-of-type {
+                    top: -40px;
+                    left: -30px;
+                }
+            }
+        }
+    }
+}
+
+/* pantallas grandes, ordenadores de escritorio */
+@media only screen and (min-width : 1025px) and (max-width : 1119px) {}
+
+/* pantallas extra-grandes, televisores */
+@media only screen and (min-width : 1200px) {}
+
+
+
+
+
+/* Iphone 5 */
+@media only screen and (width : 320px) and (height : 568px) {
+
+    main{
+        & #contacto {
+            padding-top: 10px;
+
+            & .contenedor-contacto {
+
+                & div:first-of-type {
+                    display:none;
+                }
+
+                & div:nth-of-type(2){
+
+                    height: 430px;
+
+
+                    & form{
+                         & textarea{
+                            height: 100px;
+                         }
+
+                         & label {
+                            font-size: 10px;
+
+                            & input {
+                                margin-inline: 5px;
+                                width: inherit;
+                            }
+
+                            & a {
+                                font-size: 10px;
+                            }
+
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+/* IPAd Air */
+@media  (width : 820px) and (height : 1180px) {
+
+    main {
+        /* Seccion de contactos */
+        & #contacto {
+
+            & .contenedor-contacto {
+                flex-direction: column;
+
+                & div:first-of-type {
+                    top: -40px;
+                    left: -30px;
+                }
+            }
+        }
+    }
 }
