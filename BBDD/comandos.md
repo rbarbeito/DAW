@@ -19,12 +19,18 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'username'@'%';
 ```SQL
 
 -- Garantiza todos los derechos a Jeffrey en todas las tablas de la base de datos db1, siempre que se conecte desde localhost
-GRANT ALL ON db1.* TO 'jeffrey'@'localhost';
+GRANT ALL 
+	ON db1.* 
+	TO 'jeffrey'@'localhost';
 
 -- Se crea el role1 que solo permite leer en las tablas de la base de datos world
 -- Garantiza el role1 y role2 a los user1  y user2 siempre que se conecten desde localhost
-GRANT SELECT ON world.* TO 'role1';
-GRANT 'role1', 'role2' TO 'user1'@'localhost', 'user2'@'localhost';
+GRANT SELECT 
+	ON world.* 
+	TO 'role1';
+
+GRANT 'role1', 'role2' 
+	TO 'user1'@'localhost', 'user2'@'localhost';
 
 
 -- El usuario jeffrey solo puede realizar un total de 90 queries en una hora, autenticado en localhost
@@ -37,8 +43,27 @@ SHOW GRANTS FOR jeffrey;
 REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'user'@'localhost';
 ```
 
+## Revocar permisos
+
+```sql
+REVOKE priv_type [(column_list)] [, priv_type [(column_list)]] ...
+    ON {tbl_name | * | *.* | db_name.*}
+    FROM user [, user] ...
+
+
+REVOKE ALL PRIVILEGES, 
+	GRANT OPTION 
+	FROM user [, user] ...
+
+```
+
+### Nivel global
+
+Los privilegios globales se aplican a todas las bases de datos de un servidor dado. Estos privilegios se almacenan en la tabla `mysql.user`. `GRANT ALL ON *.*` y `REVOKE ALL ON *.*` concenden y revocan sólo privilegios globales.
+
 ## Listar Bases de datos
 ```SQL
 SHOW DATABASES;
 ```
  
+ ![]<https://conclase.net/mysql/curso/cap9>
