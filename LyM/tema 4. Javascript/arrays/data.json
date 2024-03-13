@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Rodolfo",
+    "edad": 52,
+    "preferencias": "MotoGp",
+    "casado": true,
+    "peso": 71,
+    "amigos": ["Reda", "david","raul","jordi", "juanito"]
+  },
+  {
+    "nombre": "Cristian",
+    "edad": 15,
+    "preferencias": "Volleyball",
+    "casado": false,
+    "peso": 60,
+    "amigos": ["Reda", "Rodolfo"]
+  },
+  {
+    "nombre": "Reda",
+    "edad": 20,
+    "preferencias": "Money",
+    "casado": false,
+    "peso": 55,
+    "amigos": ["Cristian", "Rodolfo", "david", "raul"]
+  }
+]
