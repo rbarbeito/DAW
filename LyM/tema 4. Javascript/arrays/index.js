@@ -132,7 +132,7 @@ console.log('alumno :', personas[aleatorio].nombre)
 
 /**
  * Ejercicio 2. media de edades
- * dado el arrya de objetos antes creado, crea una funcion que imprima por consola, algun amigo de los alumnos mayores de 18
+ * dado el array de objetos antes creado, crea una función que imprima por consola, algún amigo de los alumnos mayores de 18
  */
 console.log('<--- Ejercicio 3 --->')
 
