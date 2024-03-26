@@ -59,3 +59,10 @@ Cuando debamos volver a instalar los paquetes después de clonar el repositorio 
 ```
 pip install -r requirements.txt
 ```
+
+## Para recuperar el proyecto despues de optener una copia desde GIT
+
+1. Descargamos el proyecto desde GIT
+2. creamos un entorno virtual de trabajo `python -m venv <nombre_del_entorno>`
+3. activamos el entorno
+4. Instalamos los paquetes del archivo de `requeriments.txt` con este comando `pip install -r requirements.txt`

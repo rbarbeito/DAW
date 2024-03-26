@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+:root {
+    --header-height: 80px;
+
+    --color-primario:#000;
+    --color-secundario:#c2c2c2
+
+}
+
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 180px;
+    height: 330px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+#cantidad{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid;
+}
+
+
+#total{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
