@@ -2,7 +2,7 @@
 
 ## Sistema de la Seguridad Social
 
-> 📝 La Seguridad Social tiene como finalidad garantizar a las personas trabajadoras, y a los familiares o personas que estén a su cargo, la **protección Adecuada** en las situaciones que los necesiten: enfermedad, accidente, jubilación, desempleo, orfandad, entre otras.
+> 📝 La Seguridad Social tiene como finalidad garantizar a las personas trabajadoras, y a los familiares o personas que estén a su cargo, la **protección adecuada** en las situaciones que los necesiten: enfermedad, accidente, jubilación, desempleo, orfandad, entre otras.
 
 ### Modalidades
 
@@ -20,7 +20,7 @@
 |Instituto Nacional de la Seguridad Social **INSS** |Gestiona y administra las prestaciones económicas|
 |Tesorería General de la Seguridad Social **TGSS**|Gestiona los recursos económicos y tramita las afiliaciones (altas y bajas)|
 |Servicio Publico de Empleo Estatal **SEPE**|Tramita las prestaciones por desempleo|
-|Instituto de Mayores y Servicios Sociales **IMERSO**|Gestioona las pensiones de invalidez y jubilaciones en sus modalidades no contributivas, asi como servicios no complementarios para personas mayores|
+|Instituto de Mayores y Servicios Sociales **IMERSO**|Gestiona las pensiones de invalidez y jubilaciones en sus modalidades no contributivas, asi como servicios no complementarios para personas mayores|
 |Instituto Social de la Marina|Se encarga de la gestión de las prestaciones del sector marítimo y pesquero|
 
 
@@ -33,17 +33,17 @@
 
 ## Prestaciones de la Seguridad Social
 
-1. Prestaciones en especie
+##### Prestaciones en especie
 
 |||
 |:---|:---|
-|**Prestación sanitaria, farmacéutica y social**|Tienen derecho a la asistencia sanitaria y la prestación farmacéutica: la persona trabajadora, su cónyuge, sus hijos e hijas, y sus ascendentes, siempre que vivan con él o ella y estén a su cargo, las personas pensionistas y las personas desempleadas|
+|**Prestación sanitaria, farmacéutica y social**|Tienen derecho a la asistencia sanitaria y la prestación farmacéutica: la persona trabajadora, su cónyuge, sus hijos e hijas, y sus ascendentes,<br> siempre que vivan con él o ella y estén a su cargo, las personas pensionistas y las personas desempleadas|
 
-2. Prestaciones económicas
+##### Prestaciones económicas
 
 ||||
-|:---|:---|:---|
-|**Subsidios**|Prestaciones de pago periódico y duración temporal|- incapcidad temporal<br>- Riesgos durante el embarazo y la lactancia<br>- Nacimiento y cuidado del menor<br>- Cuidaddos de menores con cancer u otra enfermedad grave<br>- Corresponsabilidad por el cuidado del lactante|
+|:------|:---|:---|
+|**Subsidios**|Prestaciones de pago periódico y duración temporal|- incapcidad temporal<br>- Riesgos durante el embarazo y la lactancia<br>- Nacimiento y cuidado del menor<br>- Cuidados de menores con cancer u otra enfermedad grave<br>- Corresponsabilidad por el cuidado del lactante|
 |**Pensiones**|Prestaciones de pago periódico y vitalicio o hasta alcanzar una edad determinada|- Incapacidad permanente<br> - Jubilación<br> - Por muerte y supervivencia|
 |**Indemnizaciones**|Prestaciones económicas que se abonan una vez|- Lesiones permanentes no invalidates<br> - Incapacidad permanente parcial|
 |**Otras prestaciones**|- Por desempleo<br> - Subsidio asistencial<br> - Prestación por activación del mecanismo RED<br> - Protección familiar no económica<br> - ingreso mínimo vital|
@@ -58,8 +58,7 @@
 ||Descripción|
 |:---|:---|
 |Situación protegida|- Nacimiento de un hijo o hija<br>- Adopción o acogida de una persona menor de seis años o menor de 18 con discapacidad|
-|Requisitos|Esta afiliado y en situación asimilada al alta y cumplir los requisitos en función de la edad.<br>1. **Menor de 21 años:** No se exige periodo de cotización<br>2. **21 a 26 años:** 90 días cotizados en los siete años anteriores al nacimiento, adopción o acogida, o 180 días a lo largo de toda la vida laboral anterior<br>3. **Mayores de 26 años:** 180 días cotizados en los siete años anteriores al nacimiento, adopción o acogida, o 360 días a los largo de toda la vida laboral anterior
-|
+|Requisitos|Esta afiliado y en situación asimilada al alta y cumplir los requisitos en función de la edad.<br>1. **Menor de 21 años:** No se exige periodo de cotización<br>2. **21 a 26 años:** 90 días cotizados en los siete años anteriores al nacimiento, adopción o acogida, o 180 días a lo largo de toda la vida laboral anterior<br>3. **Mayores de 26 años:** 180 días cotizados en los siete años anteriores al nacimiento, adopción o acogida, o 360 días a los largo de toda la vida laboral anterior|
 |Duración|16 semanas.<br>Las primeras seis semanas son obligatorias e ininterrumpidas, las otras diez semanas, pueden disfrutarse en periodos semanales hasta que el hijo/a cumpla 12 meses, siempre que ambos progenitores trabajen y cumplan los requisitos exigidos<br>La madre biológica puede anticipar las prestaciones hasta cuatro semanas antes de la fecha del parto, debiendo comunicar a la empresa el ejercicio de este derecho con una antelación de **quince dias**|
 
 #### Correspondencia en el cuidado del lactante
