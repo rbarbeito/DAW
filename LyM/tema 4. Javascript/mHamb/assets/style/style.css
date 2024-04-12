@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+:root {
+    --header-height: 80px;
+
+    --color-primario: #0f0f0f;
+    --color-secundario: #f1f1f1;
+
+}
+
+body {
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(18, 52, 86, .9), rgba(18, 52, 86,.6));
+}
+
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-secundario);
+}
+
+
+.content-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-logo a{
+    width: 65px;
+}
+
+button{
+    /* height: fit-content; */
+    background-color: transparent;
+}
+
+.content-logo a img {
+    width: 100%;
+}
+
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav li {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.openMenu,
+.closeMenu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* Dispositivos moviles */
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+    .openMenu,
+    .closeMenu {
+        display: block;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .navigation {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: peru;
+        z-index: 2;
+        transition: all .3s ease-in-out;
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .navigation.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+/* ipad y Tables */
+@media only screen and (min-width : 480px) and (max-width : 767px) {}
+
+/* pantallas pequeñas, ordenadores portátiles */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {}
+
+/* pantallas grandes, ordenadores de escritorio */
+@media only screen and (min-width : 1024px) and (max-width : 1119px) {}
+
+/* pantallas extra-grandes, televisores */
+@media only screen and (min-width : 1200px) {}
