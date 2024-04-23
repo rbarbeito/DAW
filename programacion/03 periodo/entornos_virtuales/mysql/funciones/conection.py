@@ -1,15 +1,22 @@
+#!/usr/bin/env python3
+
 import mysql.connector
-host = 'localhost'
-user = 'root'
-password = 'M@ripos4'
+import os
+from dotenv import load_dotenv
+
+# host = 'localhost'
+# user = 'root'
+# password = 'M@ripos4'
 
 
 def conexion_db(db=None):
+
+    load_dotenv()
     try:
         return mysql.connector.connect(
-            host=host,
-            user=user,
-            passwd=password,
+            host=os.getenv('MYSQL_HOST'),
+            user=os.getenv('MYSQL_USER'),
+            passwd=os.getenv('MYSQL_PASSWORD'),
             database=db)
     except Exception as e:
         print("Error de conexion")

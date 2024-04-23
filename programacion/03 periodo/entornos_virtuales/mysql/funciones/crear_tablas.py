@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from funciones.conection import conexion_db, create_cursor, close_cursor, close_cnx
 
 
@@ -15,12 +16,13 @@ def createTable(db):
 
     try:
         cursor.execute(sql)
+        print("\nTabla creada con exito")
     except Exception as e:
         print("No se pudo crear la Tabla")
         print(e)
 
-    close_cursor()
-    close_cnx()
+    close_cursor(cursor)
+    close_cnx(cnx)
 
 
 
