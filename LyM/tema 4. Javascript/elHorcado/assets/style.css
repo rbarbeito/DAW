@@ -1,0 +1,86 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+
+:root {
+    --header-height: 80px;
+    --color-primario: #0f0f0f;
+    --color-secundario: #f1f1f1;
+
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url('../assets/bg_bggenerator_com.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+
+}
+
+main {
+    color: antiquewhite;
+    width: 300px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px black;
+    background-color: #123456;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    & p:first-child {
+        font-size: 40px;
+        font-weight: 800;
+        text-align: center;
+        text-shadow: 0 0 15px black;
+    }
+
+    & label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & input {
+            margin-top: 5px;
+            width: 3rem;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            text-align: center;
+            outline: none;
+            caret-color: orangered;
+
+        }
+    }
+
+    & #palabraVacia {
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+}
+
+.ganador {
+    background-color: antiquewhite;
+    color: #0f0f0f;
+    padding: 8px 16px;
+    border-radius: 8px;
+}

@@ -1,0 +1,2 @@
+﻿$a=1
+$b="hola"$c=5,6,7,2,8,9$d=$true$e=@{Forma="Cuadrado"; Color="Azul"}$f=Get-Date<#Write-Host $aWrite-Host $bWrite-Host $cWrite-Host $dFormat-Table -InputObject $eWrite-Host $f#>Write-Host $a.GetType().NameWrite-Host $b.GetType().NameWrite-Host $c.GetType().NameWrite-Host $d.GetType().NameFormat-Table -InputObject $e.GetType().NameWrite-Host $f.GetType().Name
